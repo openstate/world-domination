@@ -37,3 +37,5 @@ South
 # Feature testing
 #django-waffle
 
+django-countries==1.5
+
