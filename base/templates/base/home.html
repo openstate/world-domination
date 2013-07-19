@@ -1,6 +1,6 @@
 {% extends "_layouts/base.html" %}
 
-{% block page_title %}Your Site - Home{% endblock %}
+{% block page_title %}{{ site.name }} - Home{% endblock %}
 {% block page_class %}home-page{% endblock %}
 {% block content %}
 <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
@@ -13,7 +13,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="#">Project name</a>
+                    <a class="brand" href="#">{{ site.name }}</a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li class="active"><a href="#">Home</a></li>

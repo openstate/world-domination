@@ -18,3 +18,4 @@ class Asset(models.Model):
         ('australia', _('Australia')),
     ),)
     country = CountryField()
+    site = models.ForeignKey(Site)
