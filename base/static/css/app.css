@@ -6,3 +6,7 @@
    css/less/bootstrap.less file.
 
    ========================================================================== */
+#map-continents li a{
+    margin: -9999em 0 0 0;
+    position: absolute;
+}
