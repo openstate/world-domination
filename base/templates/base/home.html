@@ -47,20 +47,15 @@
             
             <div id="addresses">
              <ul>
-              <li id="africa">
-              <!-- Africa -->
-
-              </li>
-              <li id="asia">
-              <!-- Asia -->
-                <ul>
-                  <li><a href="http://www.politwoops.com/g/india">India</a></li>
-                </ul>
-              </li>
-              <li id="south-america">
-              <!-- South America -->
-
-              </li>
+               {% for continent, countries in assets.items %}
+                 <li id="{{ continent }}">
+                   <ul>
+                   {% for country in countries %}
+                    <li><a href="{{ country.url}}" target="_blank">{{ country.title }}</a></li>
+                   {% endfor %}
+                   </ul>
+                 </li>
+               {% endfor %}
              </ul>
             </div>
 {% endblock %}
