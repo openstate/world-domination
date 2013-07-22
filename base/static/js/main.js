@@ -4,7 +4,7 @@ $(document).ready(function(){
         // optional: fade in/fade out delay in miliseconds;
         agentsListSpeed : 500,
         // optional: show and hide agent/address on hover;
-        agentsListOnHover : true,
+        agentsListOnHover : false,
         size : 960
     });
 });
