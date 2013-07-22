@@ -10,7 +10,7 @@ class Asset(models.Model):
     title = models.CharField(max_length=200)
     url = models.URLField()
     continent = models.CharField(max_length=50, choices=(
-        ('europe', _('European Union')),
+        ('europe', _('Europe')),
         ('north-america', _('North America')),
         ('south-america', _('South America')),
         ('africa', _('Africa')),
@@ -19,3 +19,9 @@ class Asset(models.Model):
     ),)
     country = CountryField()
     site = models.ForeignKey(Site)
+    
+    class Meta:
+        ordering = ['continent', 'title']
+    
+    def __unicode__(self):
+        return self.title
